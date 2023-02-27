@@ -115,10 +115,10 @@ Operadores Aritméticos:
 
 Precedencia dos operadores↓
 
- ( ) 
- **
- /   *   %
- +  -
+( ) 
+**
+/   *   %
++  -
 
 Auto Atribuições:                                                                   Forma Simplificada:
 
