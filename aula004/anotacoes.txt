@@ -2,7 +2,8 @@
 Minhas Anotações:
 Comandos em JS:
 
-<script>	window.alert (‘este comando emite uma mensagem!')
+<script>	
+window.alert (‘este comando emite uma mensagem!')
 window.confirm (‘este comando faz uma pergunta de confirmação')
 window.prompt (‘este comando faz um pergunta de resposta!')
 </script>
@@ -14,7 +15,7 @@ Como Criar variáveis, Ex: var nome ou let nome
 
 para uma variável receber um valor usamos var nome = Gustavo (desta forma criamos uma variável e ao mesmo tempo demos uma valor a ela) 
 
-nome = Gustavo (desta forma apenas demos um valor para a variável )
+nome = Francisco (desta forma apenas demos um valor para a variável )
 
 Regras das variáveis:
 Podem começar com: Letra, $ ou _

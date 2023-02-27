@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 004</title>
+    <style>
+      body {
+        background-color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aprendendo JavaScript</h1>
+
+    <script>
+      // FORMATANDO STRINGS
+      // .length = vai retornar o tamanho da string
+      // .toUpperCase() = transforma tudo em maiúsculas
+      // .toLowerCase() = transforma tudo em minúsculas
+      var nome = window.prompt("Qual e o seu nome?");
+      // document.write vai escrever dento do body da página
+      document.write(
+        `<strong>${nome}</strong>!! O seu nome possui ${nome.length} letras! <br> `
+      );
+      document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br> `);
+      document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} <br> `);
+
+      // FORMATANDO NÚMEROS
+
+      var n1 = 1545.5;
+      // Caso queira mais de uma casa decimal no fim do número, basta usar o toFixed() e passar o valor das casas entre os parênteses.
+
+      n1 = (1545.5).toFixed(2);
+      alert(n1);
+      // Com o replace eu mandei substituir o ponto pela vírgula
+      n1 = (1545.5).toFixed(2).replace(".", ",");
+      alert(n1);
+      // Essa linha de código deveria fazer aparecer o "R$" do Brasil, mas por algum motivo não funcionou, no terminal, utilizando node, funciona
+      n1.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+      document.write(n1);
+    </script>
+  </body>
+</html>

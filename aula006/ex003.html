@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro programa...</title>
+    <style>
+      body {
+        /* width: 500px;
+        margin: auto; */
+        background-color: gray;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+      // O prompt retorna uma string, mesmo que sejam digitados números nele
+      // Number.parseFloat é responsável por converter o dado de string para número real
+      var n1 = Number.parseFloat(window.prompt("Digite um número: ")); // String
+      // Number.parseInt é responsável por conerter o dado de string para número inteiro
+      var n2 = Number.parseInt(window.prompt("Digite outro número: ")); // String
+      // Também podemos utilizar somente "Number" e o JS vai se virar pra converter
+      var n3 = Number(window.prompt("Digite um terceiro número: "));
+      var s = n1 + n2 + n3;
+
+      window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${s}.`);
+      // (Number + Number) para adição
+      // (String + String) para concatenação
+
+      // Caso precise converter um número para string, os comandos são "String(variável)" ou "variável.toString()".
+    </script>
+  </body>
+</html>
