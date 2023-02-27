@@ -9,6 +9,7 @@
       body {
         background-color: gray;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
       }
     </style>
   </head>
@@ -38,9 +39,31 @@
       // Com o replace eu mandei substituir o ponto pela vírgula
       n1 = (1545.5).toFixed(2).replace(".", ",");
       alert(n1);
-      // Essa linha de código deveria fazer aparecer o "R$" do Brasil, mas por algum motivo não funcionou, no terminal, utilizando node, funciona
-      n1.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
-      document.write(n1);
+
+      // Essa linha de código formata o valor para o "R$" do Brasil
+      var salario = 3000;
+      var salarioReal = salario.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
+
+      document.write(
+        `Parabéns, ${nome}, seu salário como programador júnior é de ${salarioReal}!! Estamos muito felizes em tê-lo na nossa equipe!!`
+      );
+
+      var n1 = Number(window.prompt("Digite um número: "));
+      var n2 = Number(window.prompt("Digite outro numero: "));
+      var soma = n1 + n2;
+
+      window.alert(`A soma dos valores é igual à ${soma}`);
+
+      var money = 4500;
+      var realMoney = money.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
+
+      window.alert(realMoney);
     </script>
   </body>
 </html>
