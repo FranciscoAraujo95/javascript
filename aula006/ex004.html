@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>
-    <h1>Aprendendo JavaScript</h1>
+    <h1 id="titulo">Aprendendo JavaScript</h1>
 
     <script>
       // FORMATANDO STRINGS
@@ -64,6 +64,9 @@
       });
 
       window.alert(realMoney);
+
+      const titulo = document.querySelector("#titulo");
+      titulo.innerHTML = "Eu mudei esse texto uhehuehue";
     </script>
   </body>
 </html>
