@@ -1,0 +1,42 @@
+
+Minhas Anotações:
+Comandos em JS:
+
+<script>	window.alert (‘este comando emite uma mensagem!')
+window.confirm (‘este comando faz uma pergunta de confirmação')
+window.prompt (‘este comando faz um pergunta de resposta!')
+</script>
+________________________________________________________________________
+
+Variáveis:
+
+Como Criar variáveis, Ex: var nome ou let nome
+
+para uma variável receber um valor usamos var nome = Gustavo (desta forma criamos uma variável e ao mesmo tempo demos uma valor a ela) 
+
+nome = Gustavo (desta forma apenas demos um valor para a variável )
+
+Regras das variáveis:
+Podem começar com: Letra, $ ou _
+Não podem começar com números 
+É possível usar letras ou números
+É possível usar  acentos e símbolos 
+Não pode conter espaços 
+Não pode usar palavras que são comandos
+
+Dicas para nomes das variáveis: 
+Maiúsculas e Minúsculas fazem a diferença!
+Tente escolher nomes coerentes a função da variável. Ex: Variável que vai armazenar a idade, coloca o nome dela de “idade”
+Evite se tornar um “Programador Alfabeto” ou um “Programador Numérico”. Ex: Não usar os nomes das variáveis como “a”, “b”, “c”, etc; ou “a1”, “a2”, “a3”, etc.
+
+Tipos de Dados das Variáveis: (Tipos Primitivos, lembrando que existem muitas outras!)
+
+Numbers;
+Strings;
+Boolean;
+
+Numbers: 1; -2; 4.5; 6.555 -> Basicamente números
+Strings: Maria, Google, Joao, pedreiro, (seu CPF) -> Basicamente cadeia de caracteres
+Boolean: True; False ->
+
+________________________________________________________________________
