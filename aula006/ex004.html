@@ -11,10 +11,24 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
       }
+
+      .btn-zoom {
+        transition: transform 500ms;
+      }
+
+      .btn-zoom:hover {
+        transform: scale(1.5);
+      }
     </style>
   </head>
   <body>
     <h1 id="titulo">Aprendendo JavaScript</h1>
+    <p id="paragraf" class="btn-zoom">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi
+      blanditiis dolores ducimus ratione veritatis, voluptatum sequi sed
+      laboriosam ipsum vitae eveniet, numquam placeat provident quibusdam
+      exercitationem incidunt unde officiis.
+    </p>
 
     <script>
       // FORMATANDO STRINGS
@@ -65,8 +79,18 @@
 
       window.alert(realMoney);
 
+      var dinheiro = 5000;
+      var dinheiroReal = dinheiro.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL",
+      });
+
+      window.alert(dinheiroReal);
+
       const titulo = document.querySelector("#titulo");
+      const paragraf = document.querySelector("#paragraf");
       titulo.innerHTML = "Eu mudei esse texto uhehuehue";
+      paragraf.innerHTML = "Esse aqui também, LoL!!!";
     </script>
   </body>
 </html>
