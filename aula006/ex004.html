@@ -12,13 +12,13 @@
         font-size: 1.2em;
       }
 
-      .btn-zoom {
+      /* .btn-zoom {
         transition: transform 500ms;
       }
 
       .btn-zoom:hover {
         transform: scale(1.5);
-      }
+      } */
     </style>
   </head>
   <body>
@@ -35,7 +35,7 @@
       // .length = vai retornar o tamanho da string
       // .toUpperCase() = transforma tudo em maiúsculas
       // .toLowerCase() = transforma tudo em minúsculas
-      var nome = window.prompt("Qual e o seu nome?");
+      var nome = window.prompt('Qual e o seu nome?');
       // document.write vai escrever dento do body da página
       document.write(
         `<strong>${nome}</strong>!! O seu nome possui ${nome.length} letras! <br> `
@@ -51,46 +51,46 @@
       n1 = (1545.5).toFixed(2);
       alert(n1);
       // Com o replace eu mandei substituir o ponto pela vírgula
-      n1 = (1545.5).toFixed(2).replace(".", ",");
+      n1 = (1545.5).toFixed(2).replace('.', ',');
       alert(n1);
 
       // Essa linha de código formata o valor para o "R$" do Brasil
       var salario = 3000;
-      var salarioReal = salario.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL",
+      var salarioReal = salario.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
       });
 
       document.write(
         `Parabéns, ${nome}, seu salário como programador júnior é de ${salarioReal}!! Estamos muito felizes em tê-lo na nossa equipe!!`
       );
 
-      var n1 = Number(window.prompt("Digite um número: "));
-      var n2 = Number(window.prompt("Digite outro numero: "));
+      var n1 = Number(window.prompt('Digite um número: '));
+      var n2 = Number(window.prompt('Digite outro numero: '));
       var soma = n1 + n2;
 
       window.alert(`A soma dos valores é igual à ${soma}`);
 
       var money = 4500;
-      var realMoney = money.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL",
+      var realMoney = money.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
       });
 
       window.alert(realMoney);
 
       var dinheiro = 5000;
-      var dinheiroReal = dinheiro.toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL",
+      var dinheiroReal = dinheiro.toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL'
       });
 
       window.alert(dinheiroReal);
 
-      const titulo = document.querySelector("#titulo");
-      const paragraf = document.querySelector("#paragraf");
-      titulo.innerHTML = "Eu mudei esse texto uhehuehue";
-      paragraf.innerHTML = "Esse aqui também, LoL!!!";
+      const titulo = document.querySelector('#titulo');
+      const paragraf = document.querySelector('#paragraf');
+      titulo.innerHTML = 'Eu mudei esse texto uhehuehue';
+      paragraf.innerHTML = 'Esse aqui também, LoL!!!';
     </script>
   </body>
 </html>
