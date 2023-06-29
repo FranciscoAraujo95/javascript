@@ -1,9 +1,9 @@
 minhas anotações ate agora: 
 Comandos em JS:
 
-<script>	window.alert       // este comando emite uma mensagem!
+<script>	window.alert        // este comando emite uma mensagem!
 window.confirm                  // este comando faz uma pergunta de confirmação
-window.prompt                  // este comando faz um pergunta de resposta!')
+window.prompt                   // este comando faz um pergunta de resposta!')
 </script>
 ________________________________________________________________________
 
