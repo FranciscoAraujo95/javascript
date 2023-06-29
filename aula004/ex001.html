@@ -10,6 +10,42 @@
         margin: 0px;
         padding: 0px;
       }
+
+      .navbar {
+        background-color: gray;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+        padding: 10px;
+      }
+
+      .menu {
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: flex;
+      }
+
+      .menu li {
+        font-weight: bold;
+        list-style: none;
+        padding: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .menu li:hover {
+        background-color: rgb(190, 190, 190);
+        box-shadow: 7px 7px rgba(0, 0, 0, 0.363);
+        transition: 0.3s;
+      }
+
+      .menu li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
       .container {
         display: flex;
         flex-direction: column;
@@ -26,6 +62,7 @@
 
       .container:hover {
         background-color: rgb(150, 150, 150);
+        box-shadow: 12px 12px rgba(0, 0, 0, 0.308);
         transition: 0.3s;
       }
 
@@ -35,14 +72,14 @@
         transition: 0.3s;
       }
 
+      h1:hover {
+        color: rgb(190, 190, 190);
+        transition: 0.3s;
+      }
+
       h1,
       p {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
-      }
-
-      h1:hover {
-        color: darkgray;
-        transition: 0.3s;
       }
 
       body {
@@ -58,26 +95,35 @@
     </style>
   </head>
   <body>
+    <header class="navbar">
+      <ul class="menu">
+        <li><a href="https://www.youtube.com" target="_blank">Início</a></li>
+        <li>Sobre</li>
+        <li>Contato</li>
+        <li>Mais</li>
+      </ul>
+    </header>
+
     <div class="container">
       <h1>Olá, mundo!</h1>
       <p>Já me livrei da maldição.</p>
     </div>
 
-    <!-- <script>
+    <script>
       // // Dispara um alerta no navegador
       // window.alert('Minha primeira mensagem!');
       // // Dispara uma pergunta pra você confirmar ou cancelar
       // window.confirm('Está gostando de JavaScript?');
       // // Dispara uma pergunta pro usuário
-      window.prompt('Qual é seu nome?');
+      // window.prompt("Qual é seu nome?");
 
       // Pra declarar uma variável em JS podemos utilizar as palavras var, let ou const, à depender do escopo da variável
 
-      var n1 = 5;
-      window.alert(n1); // Vai criar um alerta e mostrar o valor de a1 como uma string
+      // var n1 = 5;
+      // window.alert(n1); // Vai criar um alerta e mostrar o valor de a1 como uma string
 
-      var s1 = 'Francisco Araújo';
-      window.alert(s1);
-    </script> -->
+      // var s1 = "Francisco Araújo";
+      // window.alert(s1);
+    </script>
   </body>
 </html>
