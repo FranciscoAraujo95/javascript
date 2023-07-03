@@ -20,7 +20,7 @@
       }
 
       .menu {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -85,14 +85,30 @@
       }
 
       body {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         /* margin: auto; */
         background-color: gray;
         color: white;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
           Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
           sans-serif;
+      }
+
+      .texto {
+        width: 420px;
+        margin: 1rem 0rem 0rem 1rem;
+      }
+
+      .texto h2 {
+        margin-bottom: 1rem;
+      }
+
+      .texto p {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.2;
+        text-indent: 2rem;
+        text-align: justify;
       }
     </style>
   </head>
@@ -111,21 +127,43 @@
       <p>Já me livrei da maldição.</p>
     </div>
 
+    <section class="texto">
+      <h2>Aqui vai ficar um parágrafo qualquer</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam placeat
+        sed amet nulla similique repudiandae nihil laborum ea id voluptatibus in
+        est ratione, voluptatum fugiat fugit vel modi reiciendis?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, rerum
+        assumenda quibusdam ut deleniti quos non aliquam, iure ratione sequi
+        asperiores temporibus ipsum minus! Aut officiis voluptatibus inventore
+        veritatis atque, fugiat nam, a perspiciatis labore ipsum deserunt
+        repudiandae reiciendis voluptatem magni similique ullam dolore magnam
+        excepturi provident et quo blanditiis. Explicabo, architecto et harum
+        accusamus ut sint possimus delectus assumenda consequuntur tempora porro
+        dolorem aliquam provident! Qui nihil accusantium blanditiis omnis, non
+        totam et possimus, hic est consequuntur reprehenderit vel maiores, nemo
+        tempora natus asperiores commodi ratione sed minima esse quidem beatae?
+        Eaque obcaecati eos unde at officia voluptatem repellendus.
+      </p>
+    </section>
+
     <script>
-      // // Dispara um alerta no navegador
-      // window.alert('Minha primeira mensagem!');
-      // // Dispara uma pergunta pra você confirmar ou cancelar
-      // window.confirm('Está gostando de JavaScript?');
-      // // Dispara uma pergunta pro usuário
-      // window.prompt("Qual é seu nome?");
+      // Dispara um alerta no navegador
+      window.alert("Minha primeira mensagem!");
+      // Dispara uma pergunta pra você confirmar ou cancelar
+      window.confirm("Está gostando de JavaScript?");
+      // Dispara uma pergunta pro usuário
+      window.prompt("Qual é seu nome?");
 
       // Pra declarar uma variável em JS podemos utilizar as palavras var, let ou const, à depender do escopo da variável
 
-      // var n1 = 5;
-      // window.alert(n1); // Vai criar um alerta e mostrar o valor de a1 como uma string
+      var n1 = 5;
+      window.alert(n1); // Vai criar um alerta e mostrar o valor de a1 como uma string
 
-      // var s1 = "Francisco Araújo";
-      // window.alert(s1);
+      var nome = "Francisco Araújo";
+      window.alert(nome);
     </script>
   </body>
 </html>
