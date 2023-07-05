@@ -10,19 +10,33 @@
         background-color: lightgray;
       }
 
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        width: 300px;
+        padding: 1rem;
+        background: gray;
+        border-radius: 5px;
+      }
+
       input {
         height: 2rem;
         width: 4rem;
-        margin: 0px 10px 10px 0px;
+        margin: 10px;
+        border-radius: 5px;
       }
     </style>
   </head>
   <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1" /> +
-    <input type="number" name="txtn2" id="txtn2" />
-    <input type="button" value="Somar" onclick="somar()" />
-    <div id="res">Resultado:</div>
+    <div class="container">
+      <h1>Somando Valores</h1>
+      <input type="number" name="txtn1" id="txtn1" /> +
+      <input type="number" name="txtn2" id="txtn2" />
+      <input type="button" value="Somar" onclick="somar()" />
+      <div id="res">Resultado:</div>
+    </div>
 
     <script>
       function somar() {
