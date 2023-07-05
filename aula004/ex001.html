@@ -90,13 +90,14 @@
         /* margin: auto; */
         background-color: gray;
         color: white;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
       }
 
       .texto {
-        width: 420px;
+        display: f;
+        max-width: 420px;
         margin: 1rem 0rem 0rem 1rem;
       }
 
@@ -122,12 +123,12 @@
       </ul>
     </header>
 
-    <div class="container">
-      <h1>Olá, mundo!</h1>
-      <p>Já me livrei da maldição.</p>
-    </div>
-
     <section class="texto">
+      <div class="container">
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição.</p>
+      </div>
+
       <h2>Aqui vai ficar um parágrafo qualquer</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam placeat
@@ -151,18 +152,18 @@
 
     <script>
       // Dispara um alerta no navegador
-      window.alert('Minha primeira mensagem!');
+      window.alert("Minha primeira mensagem!");
       // Dispara uma pergunta pra você confirmar ou cancelar
-      window.confirm('Está gostando de JavaScript?');
+      window.confirm("Está gostando de JavaScript?");
       // Dispara uma pergunta pro usuário
-      window.prompt('Qual é seu nome?');
+      window.prompt("Qual é seu nome?");
 
       // Pra declarar uma variável em JS podemos utilizar as palavras var, let ou const, à depender do escopo da variável
 
       var n1 = 5;
       window.alert(n1); // Vai criar um alerta e mostrar o valor de a1 como uma string
 
-      var nome = 'Francisco Araújo';
+      var nome = "Francisco Araújo";
       window.alert(nome);
     </script>
   </body>
