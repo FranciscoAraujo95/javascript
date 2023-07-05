@@ -26,13 +26,13 @@
 
     <script>
       function somar() {
-        var tn1 = window.document.getElementById("txtn1");
+        var tn1 = window.document.getElementById("txtn1"); //Pega os valores digitados nas caixas de texto
         var tn2 = window.document.querySelector("#txtn2");
-        var res = window.document.getElementById("res");
-        var n1 = Number(tn1.value);
+        var n1 = Number(tn1.value); //Converte os valores digitados na caixa de texto para números
         var n2 = Number(tn2.value);
-        var s = n1 + n2;
-        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a: <strong>${s}</strong>`;
+        var s = n1 + n2; //Joga a soma entre os valores na variável s
+        var res = window.document.getElementById("res"); //Capta onde será mostrado o resultado da soma
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a: <strong>${s}</strong>`; //Mostra o resultado na tela
       }
     </script>
   </body>
