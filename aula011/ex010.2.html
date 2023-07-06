@@ -21,15 +21,14 @@
     <p id="res">O seu país atual é o:</p>
 
     <script>
-      btn.addEventListener('click', verificar);
-
+      btn.addEventListener("click", verificar);
       function verificar() {
-        var txtp = document.getElementById('txtp');
-        var btn = document.getElementById('btn');
-        var res = document.getElementById('res');
+        var txtp = document.getElementById("txtp");
+        var btn = document.getElementById("btn");
+        var res = document.getElementById("res");
 
         res.innerText = `O seu país atual é o: ${txtp}`;
-        if (txtp == 'Brasil') {
+        if (txtp == "Brasil") {
           res.innerHTML += `<p>O seu pais atual é o Brasil! Logo, você é brasileiro!!</p>`;
         } else {
           res.innerHTML += `<p>Neste momento você mora fora do Brasil, logo, você é um estrangeiro!!</p>`;
