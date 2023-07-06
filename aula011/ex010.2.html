@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qual país?</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Qual é o seu País? 👀</h1>
+
+    Digite aqui o seu país de residência:
+    <input type="text" name="txtp" id="txtp" />
+    <input type="button" value="Verificar" id="btn" />
+    <p id="res">O seu país atual é o:</p>
+
+    <script>
+      btn.addEventListener('click', verificar);
+
+      function verificar() {
+        var txtp = document.getElementById('txtp');
+        var btn = document.getElementById('btn');
+        var res = document.getElementById('res');
+
+        res.innerText = `O seu país atual é o: ${txtp}`;
+        if (txtp == 'Brasil') {
+          res.innerHTML += `<p>O seu pais atual é o Brasil! Logo, você é brasileiro!!</p>`;
+        } else {
+          res.innerHTML += `<p>Neste momento você mora fora do Brasil, logo, você é um estrangeiro!!</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
