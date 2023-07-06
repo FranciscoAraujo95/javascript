@@ -1,5 +1,5 @@
 var agora = new Date();
-var diaSem = agora.getDay();
+var diaSem = agora.getDay(); //getDay vai pegar o dia da semana
 
 /*
 0 = Domingo
@@ -14,34 +14,34 @@ var diaSem = agora.getDay();
 // console.log(diaSem);
 switch (diaSem) {
   case 0:
-    console.log("Domingo");
+    console.log('Domingo');
     break;
   case 1:
-    console.log("Segunda-feira");
+    console.log('Segunda-feira');
     break;
   case 2:
-    console.log("Terça-feira");
+    console.log('Terça-feira');
     break;
   case 3:
-    console.log("Quarta-feira");
+    console.log('Quarta-feira');
     break;
   case 4:
-    console.log("Quinta-feira");
+    console.log('Quinta-feira');
     break;
   case 5:
-    console.log("Sexta-feira");
+    console.log('Sexta-feira');
     break;
   case 6:
-    console.log("Sábado");
+    console.log('Sábado');
     break;
   default:
-    console.log("DIA INVÁLIDO");
+    console.log('DIA INVÁLIDO');
 }
 
-var media = 8.5;
-console.log(`Sua média é ${media}`);
-if (media >= 7) {
-  console.log("Você está aprovado");
-} else {
-  console.log("Você está reprovado");
-}
+// var media = 8.5;
+// console.log(`Sua média é ${media}`);
+// if (media >= 7) {
+//   console.log('Você está aprovado');
+// } else {
+//   console.log('Você está reprovado');
+// }
