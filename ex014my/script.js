@@ -14,7 +14,7 @@ function carregar() {
     img.src = "img/manha.png";
     msg2.innerHTML = "Neste momento é dia.";
     document.body.style.background = "limegreen";
-  } else if (hora > 12 && hora <= 18) {
+  } else if (hora <= 18) {
     img.src = "img/tarde.png";
     msg2.innerHTML = "Neste momento é tarde.";
     document.body.style.background = "orange";
