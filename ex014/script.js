@@ -46,3 +46,9 @@ function noite() {
   img.src = 'img/noite.png';
   msg.innerHTML = 'Esse é o período da noite.';
 }
+
+var rld = document.getElementById('rld');
+rld.addEventListener('click', recarregar);
+function recarregar() {
+  window.location.reload();
+}
