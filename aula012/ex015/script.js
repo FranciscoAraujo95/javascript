@@ -11,7 +11,7 @@ function verificar() {
   } else {
     var fsex = document.getElementsByName("radsex"); //Pega a escolha nos radio buttons
     var idade = ano - Number(fano.value); //Calcula a idade atual do usuário
-    var gênero = ""; //Variável que começa vazia para atribuir valor dependendo do resultado da escolha do usuário
+    var gênero = ""; //Variável que começa vazia para atribuir valor dependendo do resultado da escolha do usuário nos radio buttons
     var img = document.createElement("img");
     img.setAttribute("id", "foto");
     if (fsex[0].checked) {
