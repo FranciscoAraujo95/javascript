@@ -11,14 +11,17 @@ function carregar() {
   msg.innerHTML = ` Agora são exatamente ${hora} horas e ${minuto} minutos.`;
 
   if (hora >= 0 && hora <= 12) {
+    //BOM DIA
     img.src = "img/manha.png";
     msg2.innerHTML = "Neste momento é dia.";
     document.body.style.background = "limegreen";
   } else if (hora <= 18) {
+    //BOA TARDE
     img.src = "img/tarde.png";
     msg2.innerHTML = "Neste momento é tarde.";
     document.body.style.background = "orange";
   } else {
+    //BOA NOITE
     img.src = "img/noite.png";
     msg2.innerHTML = "Neste momento é noite.";
     document.body.style.background = "darkblue";
