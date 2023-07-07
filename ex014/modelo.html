@@ -6,14 +6,23 @@
     <title>Modelo de Exercício</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="carregar()">
     <header>
-      <h1>Titulo</h1>
+      <h1>Hora do Dia</h1>
     </header>
     <section>
-      <div>Testando...</div>
-      <div>Olá</div>
+      <div id="msg">Aqui vai aparecer a mensagem...</div>
+      <div>
+        <img id="imagem" src="/ex014/img/manha.png" alt="foto da manhã" />
+      </div>
     </section>
+
+    <div id="buttons">
+      <div id="btn-dia" class="btn">Dia</div>
+      <div id="btn-tarde" class="btn">Tarde</div>
+      <div id="btn-noite" class="btn">Noite</div>
+    </div>
+
     <footer>
       <p>&copy; CursoemVideo</p>
     </footer>

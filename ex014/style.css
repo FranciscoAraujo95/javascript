@@ -13,9 +13,53 @@ section {
   background: white;
   border-radius: 10px;
   padding: 1rem;
-  width: 350px;
+  width: 500px;
   margin: 0 auto;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
+}
+
+div {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.btn {
+  background: lightgray;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.384);
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#btn-dia:hover {
+  background: rgb(101, 165, 101);
+  color: white;
+  transition: 0.3s;
+}
+
+#btn-tarde:hover {
+  background: orange;
+  color: white;
+  transition: 0.3s;
+}
+
+#btn-noite:hover {
+  background: rgb(0, 0, 189);
+  color: white;
+  transition: 0.3s;
 }
 
 footer {
