@@ -3,16 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelo de Exercício</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <header>
-      <h1>Titulo</h1>
+      <h1>Verificador de Idade</h1>
     </header>
     <section>
-      <div>Testando...</div>
-      <div>Olá</div>
+      <div>
+        Ano de Nascimento:
+        <input type="number" name="txtano" id="txtano" />
+      </div>
+      <div>
+        Sexo:
+        <input type="radio" name="radsex" id="mas" />
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem" />
+        <label for="fem">Feminino</label>
+      </div>
+      <div>
+        <input id="btn" type="button" value="Verificar" />
+      </div>
+      <div id="res">Aqui vai o resultado...</div>
+      <span id="rld" class="material-symbols-rounded"> refresh </span>
     </section>
     <footer>
       <p>&copy; CursoemVideo</p>
