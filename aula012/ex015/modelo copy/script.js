@@ -1,60 +1,68 @@
-var btn = document.getElementById("btn");
-btn.addEventListener("click", verificar);
+var btn = document.getElementById('btn');
+btn.addEventListener('click', verificar);
 
 function verificar() {
   var data = new Date();
   var ano = data.getFullYear();
-  var fano = document.getElementById("txtano");
-  var res = document.getElementById("res");
+  var fano = document.getElementById('txtano');
+  var res = document.getElementById('res');
 
   if (fano.value.length == 0 || fano > ano) {
     alert(`[ERRO] Verifique os dados e tente novamente!`);
   } else {
     var idade = ano - Number(fano.value);
-    var fsex = document.getElementsByName("radsex");
-    var genero = "";
-    var img = document.createElement("img");
-    img.setAttribute("id", "foto");
+    var fsex = document.getElementsByName('radsex');
+    var genero = '';
+    var img = document.createElement('img');
+    img.setAttribute('id', 'foto');
     if (fsex[0].checked) {
-      genero = "homem";
+      genero = 'homem';
       if (idade >= 0 && idade < 12) {
         //criança
-        img.setAttribute("src", "img/crianca-h.png");
+        img.setAttribute('src', 'img/crianca-h.png');
+        document.body.style.background = 'lightblue';
       } else if (idade < 21) {
         //jovem
-        img.setAttribute("src", "img/jovem-h.png");
+        img.setAttribute('src', 'img/jovem-h.png');
+        document.body.style.background = 'green';
       } else if (idade < 50) {
         //adulto
-        img.setAttribute("src", "img/adulto-h.png");
+        img.setAttribute('src', 'img/adulto-h.png');
+        document.body.style.background = 'purple';
       } else {
         //idoso
-        img.setAttribute("src", "img/idoso-h.png");
+        img.setAttribute('src', 'img/idoso-h.png');
+        document.body.style.background = 'gray';
       }
     } else if (fsex[1].checked) {
-      genero = "mulher";
+      genero = 'mulher';
       if (idade >= 0 && idade < 12) {
         //criança
-        img.setAttribute("src", "img/crianca-m.png");
+        img.setAttribute('src', 'img/crianca-m.png');
+        document.body.style.background = 'lightblue';
       } else if (idade < 21) {
         //jovem
-        img.setAttribute("src", "img/jovem-m.png");
+        img.setAttribute('src', 'img/jovem-m.png');
+        document.body.style.background = 'green';
       } else if (idade < 50) {
         //adulto
-        img.setAttribute("src", "img/adulto-m.png");
+        img.setAttribute('src', 'img/adulto-m.png');
+        document.body.style.background = 'purple';
       } else {
         //idoso
-        img.setAttribute("src", "img/idoso-m.png");
+        img.setAttribute('src', 'img/idoso-m.png');
+        document.body.style.background = 'gray';
       }
     }
   }
-  img.style.padding = "1rem";
-  res.style.textAlign = "center";
+  img.style.padding = '1rem';
+  res.style.textAlign = 'center';
   res.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
   res.appendChild(img);
 }
 
-var rld = document.getElementById("rld");
-rld.addEventListener("click", recarregar);
+var rld = document.getElementById('rld');
+rld.addEventListener('click', recarregar);
 function recarregar() {
   window.location.reload();
 }
