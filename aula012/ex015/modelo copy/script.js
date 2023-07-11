@@ -66,3 +66,4 @@ rld.addEventListener('click', recarregar);
 function recarregar() {
   window.location.reload();
 }
+
