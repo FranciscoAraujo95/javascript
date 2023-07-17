@@ -5,9 +5,10 @@ btn.addEventListener("click", () => {
   let num = Number(txtn.value);
   let multiplicador = 1;
   let res = document.getElementById("res");
+  res.innerHTML = "";
   for (let c = multiplicador; c <= 10; c++) {
     let resultado = c * num;
-    res.innerHTML += `${c} x ${num} = ${resultado} <br>`;
+    res.innerHTML += `${num} x ${c} = ${resultado} <br>`;
   }
 });
 
