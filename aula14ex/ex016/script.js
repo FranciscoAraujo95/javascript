@@ -37,7 +37,7 @@ function contar() {
       for (var c = i; c <= f; c += p) {
         res.innerHTML += `${c} \u{1F449}`;
       }
-    } else {
+    } else if (i > f) {
       //contagem decrescente
       for (var c = i; c >= f; c -= p) {
         res.innerHTML += `${c} \u{1F449}`;
