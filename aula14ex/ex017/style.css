@@ -12,6 +12,7 @@ body {
 header {
   color: white;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 section {
@@ -34,6 +35,10 @@ section {
   overflow: hidden;
 }
 
+.button {
+  cursor: pointer;
+}
+
 input {
   width: 50px;
 }
@@ -42,4 +47,5 @@ footer {
   color: white;
   text-align: center;
   font-style: italic;
+  margin-top: 1rem;
 }
