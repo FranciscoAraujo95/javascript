@@ -34,19 +34,6 @@ section {
   overflow: hidden;
 }
 
-.button {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  height: 30px;
-  cursor: pointer;
-  background: white;
-  color: #988b7a;
-  border: 3px solid #988b7a;
-  box-shadow: 5px 5px #988b7aaf;
-}
-
 input {
   width: 50px;
 }

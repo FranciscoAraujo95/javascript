@@ -4,42 +4,67 @@
 }
 
 body {
-  background: rgb(112, 112, 224);
-  font-size: 1.3rem;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  color: white;
-  text-align: center;
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-section {
+.modal-container.mostrar {
+  display: flex;
+  animation: modal 0.3s;
+}
+
+.modal {
   background: white;
-  border-radius: 10px;
-  padding: 1rem;
-  width: 400px;
-  margin: 0 auto;
-  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
+  width: 50%;
+  min-width: 300px;
+  padding: 40px;
+  /* border-radius: 5px; */
+  border: 15px solid #988b7a;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
 }
 
-#res {
-  font-size: 1rem;
-  border: 2px solid gray;
-  border-radius: 5px;
-  width: 150px;
-  height: 175px;
-  margin-top: 1rem;
-  padding: 5px;
-  overflow: hidden;
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .button {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
   height: 30px;
+  width: 100px;
   cursor: pointer;
   background: white;
   color: #988b7a;
@@ -47,12 +72,34 @@ section {
   box-shadow: 5px 5px #988b7aaf;
 }
 
-input {
-  width: 50px;
+.input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: 3px solid #988b7a;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.1rem;
 }
 
-footer {
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fechar {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 50px;
+  height: 50px;
+  font-family: monospace;
+  font-size: 1.2rem;
   color: white;
-  text-align: center;
-  font-style: italic;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #988b7a;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
