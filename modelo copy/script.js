@@ -1,24 +1,37 @@
-var btn = document.getElementById("btn");
+const rld = document.getElementById("rld");
+rld.addEventListener("click", () => {
+  window.location.reload();
+});
+
+const btn = document.getElementById("btn");
+var vetor = [];
 btn.addEventListener("click", () => {
   var num = document.getElementById("txtn");
-  var tab = document.getElementById("seltab");
+  var sel = document.getElementById("sel");
   if (num.value.length == 0) {
-    alert("Impossível gerar. Por favor digite um número!");
+    alert("Número inválido!");
   } else {
-    tab.innerHTML = "";
     var n = Number(num.value);
-    var c = 1;
-    while (c <= 10) {
+    if (n < 1 || n > 100) {
+      alert("Número inválido!");
+    } else {
       var item = document.createElement("option");
-      item.innerHTML = `${n} x ${c} = ${n * c}`;
-      tab.appendChild(item);
-      c++;
+      item.innerHTML = `Número ${n} adicionado.`;
+      sel.appendChild(item);
+      vetor.push(n);
+
+      var final = document.getElementById("final");
+      final.addEventListener("click", () => {
+        if (num.value.length == 0) {
+          alert("Adicione um número primeiro.");
+        } else {
+          var p = document.createElement("p");
+          var res = document.getElementById("res");
+          p.innerHTML = `O total de números adicionados foi de ${vetor.length} <br> <br>`;
+          p.innerHTML += `Os números adicionados foram ${vetor} <br> <br>`;
+          res.appendChild(p);
+        }
+      });
     }
   }
 });
-
-// var btn1 = document.getElementById("btn1");
-// btn1.addEventListener("click", () => {
-//   tab.innerHTML = "Não tá dando certo";
-//   tab.appendChild(item);
-// });

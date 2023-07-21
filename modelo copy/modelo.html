@@ -8,32 +8,23 @@
   </head>
   <body>
     <header>
-      <h1>Tabuada</h1>
+      <h1>Analisador de Números</h1>
     </header>
     <section>
-      <div id="form">
-        <p>
-          Número: <input type="number" name="num" id="txtn" />
-          <input type="button" value="Gerar Tabuada" class="button" id="btn" />
-        </p>
+      <div id="inicio">
+        Número (entre 1 e 100): <input type="number" name="num" id="txtn" />
+        <input type="button" value="Adicionar" id="btn" class="button" />
+        <input type="button" value="Reload" id="rld" class="button" />
       </div>
-      <div>
-        <select name="Tab" id="seltab" size="10">
-          <option value="">Tabuada</option>
+      <div id="select">
+        <select name="select" id="sel" size="10">
+          <option value="v1">Resultado</option>
         </select>
       </div>
-      <div id="numeros">
-        <button class="button" id="btn1">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">10</button>
+      <div id="buto">
+        <input type="button" value="Finalizar" id="final" class="button" />
       </div>
+      <p id="res"></p>
     </section>
     <footer>
       <p>&copy; CursoemVideo</p>
