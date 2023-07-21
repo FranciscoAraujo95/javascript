@@ -3,7 +3,7 @@ btn.addEventListener("click", () => {
   var num = document.getElementById("txtn");
   var tab = document.getElementById("seltab");
   if (num.value.length == 0) {
-    alert("Por favor digite um número!");
+    alert("Impossível gerar. Por favor digite um número!");
   } else {
     tab.innerHTML = "";
     var n = Number(num.value);
@@ -17,11 +17,8 @@ btn.addEventListener("click", () => {
   }
 });
 
-var btn1 = document.getElementById("btn1");
-btn1.addEventListener("click", () => {
-  tab.innerHTML = "Não tá dando certo";
-  tab.appendChild(item);
-});
-
-
-//como declarar uma variável?
+// var btn1 = document.getElementById("btn1");
+// btn1.addEventListener("click", () => {
+//   tab.innerHTML = "Não tá dando certo";
+//   tab.appendChild(item);
+// });
