@@ -13,34 +13,9 @@ section {
   background: white;
   border-radius: 10px;
   padding: 1rem;
-  width: 440px;
+  width: 350px;
   margin: 0 auto;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.171);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  gap: 1rem;
-}
-
-select {
-  width: 150px;
-}
-
-#inicio {
-  grid-column: 1/3;
-}
-
-#buto {
-  grid-column: 1/2;
-}
-
-.button {
-  cursor: pointer;
-}
-
-p {
-  grid-column: 1/3;
 }
 
 footer {
